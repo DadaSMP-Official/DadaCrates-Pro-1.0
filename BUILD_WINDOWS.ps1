@@ -12,7 +12,7 @@ $classpath = ($classpath | Select-Object -Unique) -join ";"
 & javac -encoding UTF-8 -source 17 -target 17 -cp $classpath -d $classes $sources
 if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 Copy-Item (Join-Path $base "src\main\resources\*") $classes -Recurse -Force
-& jar cf (Join-Path $target "DadaCratesPro-1.0.1-HOSTMR.jar") -C $classes .
+& jar cf (Join-Path $target "DadaCratesPro-1.0.jar") -C $classes .
 if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 Write-Host "Built:"
-Write-Host (Join-Path $target "DadaCratesPro-1.0.1-HOSTMR.jar")
+Write-Host (Join-Path $target "DadaCratesPro-1.0.jar")

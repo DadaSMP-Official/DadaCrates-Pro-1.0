@@ -1,9 +1,9 @@
 ﻿name: DadaCratesPro
-version: 1.0.1-HOSTMR
+version: "1.0"
 main: it.dadasmp.dadacrates.DadaCratesPlugin
 api-version: "1.20"
 author: DadaSMP
-description: DadaCratesPro originale DadaSMP, patch HostMR senza simboli pack e con GUI key completa.
+description: DadaCratesPro 1.0 - plugin crates completo con GUI, key, premi e animazioni.
 commands:
   dadacrates:
     description: Comando principale di DadaCratesPro

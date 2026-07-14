@@ -1,13 +1,12 @@
-# DadaCrates Pro 1.0
+# DadaCratesPro 1.0
 
 Plugin crates completo per server Minecraft Paper/Spigot.
 
-**DadaCrates Pro 1.0** permette di creare, gestire e aprire crate direttamente dal server con GUI, key, premi configurabili, probabilita, animazioni, suoni, hologrammi e permessi. La versione pubblicata qui e pensata per essere semplice da installare e pronta da provare: niente simboli obbligatori da resource pack, niente item strani di texture custom, solo crate leggibili e compatibili con un server vanilla/Paper.
+**DadaCratesPro 1.0** permette di creare, gestire e aprire crate direttamente dal server con GUI, key, premi configurabili, probabilita, animazioni, suoni, hologrammi e permessi. La versione pubblicata qui e pensata per essere semplice da installare e pronta da provare: niente simboli obbligatori da resource pack, niente item strani di texture custom, solo crate leggibili e compatibili con un server vanilla/Paper.
 
 ## Versioni
 
-- `1.0.0` - versione originale DadaSMP
-- `1.0.1-HOSTMR` - versione GitHub/HostMR con crate default pulite, key GUI migliorata e fix per Paper moderno
+- `1.0` - versione pubblica con crate default pulite, key GUI migliorata e fix per Paper moderno
 
 ## Funzioni principali
 
@@ -45,7 +44,7 @@ Plugin crates completo per server Minecraft Paper/Spigot.
 
 Il jar compilato si trova qui:
 
-`release/DadaCratesPro-1.0.1-HOSTMR.jar`
+`release/DadaCratesPro-1.0.jar`
 
 Per installarlo:
 
