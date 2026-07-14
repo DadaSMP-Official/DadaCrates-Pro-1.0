@@ -1,4 +1,7 @@
-# DadaCratesPro 1.0
+﻿# DadaCratesPro 1.0
+
+<p align="center"><img src="assets/dadasmp-logo.png" alt="DadaSMP" width="180"></p>
+
 
 > **Advanced crates, keys, rewards, previews and opening animations for Minecraft servers.**
 
