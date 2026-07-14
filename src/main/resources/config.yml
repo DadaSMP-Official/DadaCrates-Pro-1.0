@@ -1,0 +1,290 @@
+settings:
+  prefix: "&8[&bCrates&8] &r"
+  preview-with-left-click: true
+  broadcast-wins: true
+  protect-crate-blocks: true
+  animation-ticks: 56
+  animation-speed-ticks: 2
+  menu-title: "&8DadaCrates - Admin"
+  crates-title: "&8DadaCrates - Crates"
+  keys-title: "&8DadaCrates - Keys"
+  key-editor-title-prefix: "&8Key: "
+  preview-title: "&8Preview &b%crate%"
+  opening-title: "&8Opening &b%crate%"
+  sounds:
+    tick: "UI_BUTTON_CLICK"
+    win: "ENTITY_PLAYER_LEVELUP"
+    error: "ENTITY_VILLAGER_NO"
+
+messages:
+  no-permission: "&cNon hai il permesso."
+  only-player: "&cSolo i player possono usare questo comando."
+  reloaded: "&aDadaCrates ricaricato."
+  unknown-crate: "&cCrate non trovata: &f%crate%"
+  crate-set: "&aBaule crate &f%crate% &asettato."
+  crate-removed: "&aBaule crate rimosso."
+  no-crate-here: "&cQui non c'e nessuna crate."
+  need-key: "&cTi serve la key giusta per &f%crate%&c."
+  opening: "&eStai aprendo &f%crate%&e..."
+  win: "&aHai trovato: &f%reward%"
+  broadcast: "&b%player% &7ha trovato &f%reward% &7da &b%crate%&7!"
+  key-given: "&aDate &f%amount%x &akey per &f%crate% &aa &f%player%&a."
+  key-received: "&aHai ricevuto &f%amount%x &akey per &f%crate%&a."
+  must-look-block: "&cGuarda un blocco entro 6 blocchi."
+  inventory-full: "&eInventario pieno, premio droppato a terra."
+
+crates:
+  comune:
+    display-name: "&aCrate Comune"
+    permission: "dadacrates.open.comune"
+    block-material: "CHEST"
+    key:
+      material: "TRIPWIRE_HOOK"
+      name: "&aKey Comune"
+      lore:
+        - "&7Apre la &aCrate Comune&7."
+        - "&7Utilizzi: &f%uses%"
+      default-uses: 1
+    rewards:
+      diamanti:
+        name: "&b8 Diamanti"
+        chance: 20.0
+        material: "DIAMOND"
+        amount: 8
+        lore: []
+        commands: []
+        broadcast: false
+      ferro:
+        name: "&f24 Ferro"
+        chance: 30.0
+        material: "IRON_INGOT"
+        amount: 24
+        lore: []
+        commands: []
+        broadcast: false
+      cibo:
+        name: "&a32 Bistecche"
+        chance: 30.0
+        material: "COOKED_BEEF"
+        amount: 32
+        lore: []
+        commands: []
+        broadcast: false
+  rara:
+    display-name: "&bCrate Rara"
+    permission: "dadacrates.open.rara"
+    block-material: "CHEST"
+    key:
+      material: "TRIPWIRE_HOOK"
+      name: "&bKey Rara"
+      lore:
+        - "&7Apre la &bCrate Rara&7."
+        - "&7Utilizzi: &f%uses%"
+      default-uses: 1
+    rewards:
+      smeraldi:
+        name: "&a16 Smeraldi"
+        chance: 25.0
+        material: "EMERALD"
+        amount: 16
+        lore: []
+        commands: []
+        broadcast: false
+      oro:
+        name: "&632 Oro"
+        chance: 25.0
+        material: "GOLD_INGOT"
+        amount: 32
+        lore: []
+        commands: []
+        broadcast: false
+      scrap:
+        name: "&84 Netherite Scrap"
+        chance: 10.0
+        material: "NETHERITE_SCRAP"
+        amount: 4
+        lore: []
+        commands: []
+        broadcast: true
+  epica:
+    display-name: "&dCrate Epica"
+    permission: "dadacrates.open.epica"
+    block-material: "CHEST"
+    key:
+      material: "TRIPWIRE_HOOK"
+      name: "&dKey Epica"
+      lore:
+        - "&7Apre la &dCrate Epica&7."
+        - "&7Utilizzi: &f%uses%"
+      default-uses: 1
+    rewards:
+      diamanti:
+        name: "&b24 Diamanti"
+        chance: 20.0
+        material: "DIAMOND"
+        amount: 24
+        lore: []
+        commands: []
+        broadcast: false
+      totem:
+        name: "&e2 Totem"
+        chance: 12.0
+        material: "TOTEM_OF_UNDYING"
+        amount: 2
+        lore: []
+        commands: []
+        broadcast: true
+      tridente:
+        name: "&3Tridente"
+        chance: 7.0
+        material: "TRIDENT"
+        amount: 1
+        lore: []
+        commands: []
+        broadcast: true
+  leggendaria:
+    display-name: "&6Crate Leggendaria"
+    permission: "dadacrates.open.leggendaria"
+    block-material: "CHEST"
+    key:
+      material: "TRIPWIRE_HOOK"
+      name: "&6Key Leggendaria"
+      lore:
+        - "&7Apre la &6Crate Leggendaria&7."
+        - "&7Utilizzi: &f%uses%"
+      default-uses: 1
+    rewards:
+      beacon:
+        name: "&fBeacon"
+        chance: 8.0
+        material: "BEACON"
+        amount: 1
+        lore: []
+        commands: []
+        broadcast: true
+      netherite:
+        name: "&84 Netherite"
+        chance: 12.0
+        material: "NETHERITE_INGOT"
+        amount: 4
+        lore: []
+        commands: []
+        broadcast: true
+      stella:
+        name: "&dNether Star"
+        chance: 8.0
+        material: "NETHER_STAR"
+        amount: 1
+        lore: []
+        commands: []
+        broadcast: true
+  mitica:
+    display-name: "&cCrate Mitica"
+    permission: "dadacrates.open.mitica"
+    block-material: "CHEST"
+    key:
+      material: "TRIPWIRE_HOOK"
+      name: "&cKey Mitica"
+      lore:
+        - "&7Apre la &cCrate Mitica&7."
+        - "&7Utilizzi: &f%uses%"
+      default-uses: 1
+    rewards:
+      elytra:
+        name: "&dElytra"
+        chance: 5.0
+        material: "ELYTRA"
+        amount: 1
+        lore: []
+        commands: []
+        broadcast: true
+      netherite:
+        name: "&88 Netherite"
+        chance: 8.0
+        material: "NETHERITE_INGOT"
+        amount: 8
+        lore: []
+        commands: []
+        broadcast: true
+      mele:
+        name: "&62 Mele Incantate"
+        chance: 10.0
+        material: "ENCHANTED_GOLDEN_APPLE"
+        amount: 2
+        lore: []
+        commands: []
+        broadcast: true
+  voto:
+    display-name: "&fCrate Voto"
+    permission: "dadacrates.open.voto"
+    block-material: "CHEST"
+    key:
+      material: "TRIPWIRE_HOOK"
+      name: "&fKey Voto"
+      lore:
+        - "&7Apre la &fCrate Voto&7."
+        - "&7Utilizzi: &f%uses%"
+      default-uses: 1
+    rewards:
+      xp:
+        name: "&a32 Bottiglie XP"
+        chance: 25.0
+        material: "EXPERIENCE_BOTTLE"
+        amount: 32
+        lore: []
+        commands: []
+        broadcast: false
+      razzi:
+        name: "&f32 Razzi"
+        chance: 20.0
+        material: "FIREWORK_ROCKET"
+        amount: 32
+        lore: []
+        commands: []
+        broadcast: false
+      oro:
+        name: "&e32 Oro"
+        chance: 20.0
+        material: "GOLD_INGOT"
+        amount: 32
+        lore: []
+        commands: []
+        broadcast: false
+  oscura:
+    display-name: "&8Crate Oscura"
+    permission: "dadacrates.open.oscura"
+    block-material: "CHEST"
+    key:
+      material: "TRIPWIRE_HOOK"
+      name: "&8Key Oscura"
+      lore:
+        - "&7Apre la &8Crate Oscura&7."
+        - "&7Utilizzi: &f%uses%"
+      default-uses: 1
+    rewards:
+      ossidiana:
+        name: "&864 Ossidiana"
+        chance: 20.0
+        material: "OBSIDIAN"
+        amount: 64
+        lore: []
+        commands: []
+        broadcast: false
+      ancient:
+        name: "&84 Ancient Debris"
+        chance: 8.0
+        material: "ANCIENT_DEBRIS"
+        amount: 4
+        lore: []
+        commands: []
+        broadcast: true
+      stella:
+        name: "&dNether Star"
+        chance: 5.0
+        material: "NETHER_STAR"
+        amount: 1
+        lore: []
+        commands: []
+        broadcast: true
+
+locations: {}

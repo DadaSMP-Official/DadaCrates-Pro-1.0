@@ -1,0 +1,23 @@
+﻿name: DadaCratesPro
+version: 1.0.1-HOSTMR
+main: it.dadasmp.dadacrates.DadaCratesPlugin
+api-version: "1.20"
+author: DadaSMP
+description: DadaCratesPro originale DadaSMP, patch HostMR senza simboli pack e con GUI key completa.
+commands:
+  dadacrates:
+    description: Comando principale di DadaCratesPro
+    aliases: [dcrates, crate, crates, lootcrate, loot]
+    usage: /dadacrates
+    permission: dadacrates.admin
+    permission-message: "§cNon hai il permesso."
+permissions:
+  dadacrates.admin:
+    description: Permette di modificare crate, key, reward e impostazioni.
+    default: op
+  dadacrates.use:
+    description: Permette di aprire le crate.
+    default: op
+  dadacrates.open.*:
+    description: Permette di aprire tutte le crate configurate.
+    default: op
